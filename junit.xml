@@ -1,28 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Browser Test Suite" tests="6" assertions="19" errors="1" failures="0" skipped="0" time="38.691385">
-    <testsuite name="Tests\Browser\InstallationTest" file="C:\wamp64\www\laravel-dusk-demo\tests\Browser\InstallationTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="4.959146">
-      <testcase name="testLaravelInstallation" class="Tests\Browser\InstallationTest" classname="Tests.Browser.InstallationTest" file="C:\wamp64\www\laravel-dusk-demo\tests\Browser\InstallationTest.php" line="19" assertions="1" time="4.959146"/>
+  <testsuite name="Browser Test Suite" tests="6" assertions="1" errors="5" failures="0" skipped="0" time="54.636790">
+    <testsuite name="Tests\Browser\InstallationTest" file="E:\Dusk-with-travis-CI-demo\tests\Browser\InstallationTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="4.211863">
+      <testcase name="testLaravelInstallation" class="Tests\Browser\InstallationTest" classname="Tests.Browser.InstallationTest" file="E:\Dusk-with-travis-CI-demo\tests\Browser\InstallationTest.php" line="19" assertions="1" time="4.211863"/>
     </testsuite>
-    <testsuite name="Tests\Browser\LoginTest" file="C:\wamp64\www\laravel-dusk-demo\tests\Browser\LoginTest.php" tests="2" assertions="8" errors="0" failures="0" skipped="0" time="10.285160">
-      <testcase name="testLoginValidation" class="Tests\Browser\LoginTest" classname="Tests.Browser.LoginTest" file="C:\wamp64\www\laravel-dusk-demo\tests\Browser\LoginTest.php" line="19" assertions="5" time="8.911543"/>
-      <testcase name="testLogin" class="Tests\Browser\LoginTest" classname="Tests.Browser.LoginTest" file="C:\wamp64\www\laravel-dusk-demo\tests\Browser\LoginTest.php" line="124" assertions="3" time="1.373617"/>
+    <testsuite name="Tests\Browser\LoginTest" file="E:\Dusk-with-travis-CI-demo\tests\Browser\LoginTest.php" tests="2" assertions="0" errors="2" failures="0" skipped="0" time="19.589421">
+      <testcase name="testLoginFormValidation" class="Tests\Browser\LoginTest" classname="Tests.Browser.LoginTest" file="E:\Dusk-with-travis-CI-demo\tests\Browser\LoginTest.php" line="17" assertions="0" time="9.338598">
+        <error type="Facebook\WebDriver\Exception\WebDriverCurlException">Tests\Browser\LoginTest::testLoginFormValidation
+Facebook\WebDriver\Exception\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"binary":"","args":["--disable-gpu","--window-size=1920,1080"]}}}
+
+Failed to connect to localhost port 9515: Connection refused
+
+E:\Dusk-with-travis-CI-demo\vendor\facebook\webdriver\lib\Remote\HttpCommandExecutor.php:292
+E:\Dusk-with-travis-CI-demo\vendor\facebook\webdriver\lib\Remote\RemoteWebDriver.php:126
+E:\Dusk-with-travis-CI-demo\tests\DuskTestCase.php:41
+E:\Dusk-with-travis-CI-demo\vendor\laravel\dusk\src\Concerns\ProvidesBrowser.php:192
+E:\Dusk-with-travis-CI-demo\vendor\laravel\framework\src\Illuminate\Support\helpers.php:754
+E:\Dusk-with-travis-CI-demo\vendor\laravel\dusk\src\Concerns\ProvidesBrowser.php:193
+E:\Dusk-with-travis-CI-demo\vendor\laravel\dusk\src\Concerns\ProvidesBrowser.php:93
+E:\Dusk-with-travis-CI-demo\vendor\laravel\dusk\src\Concerns\ProvidesBrowser.php:64
+E:\Dusk-with-travis-CI-demo\tests\Browser\LoginTest.php:30
+</error>
+      </testcase>
+      <testcase name="testLogin" class="Tests\Browser\LoginTest" classname="Tests.Browser.LoginTest" file="E:\Dusk-with-travis-CI-demo\tests\Browser\LoginTest.php" line="74" assertions="0" time="10.250823">
+        <error type="Facebook\WebDriver\Exception\WebDriverCurlException">Tests\Browser\LoginTest::testLogin
+Facebook\WebDriver\Exception\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"binary":"","args":["--disable-gpu","--window-size=1920,1080"]}}}
+
+Failed to connect to localhost port 9515: Connection refused
+
+E:\Dusk-with-travis-CI-demo\vendor\facebook\webdriver\lib\Remote\HttpCommandExecutor.php:292
+E:\Dusk-with-travis-CI-demo\vendor\facebook\webdriver\lib\Remote\RemoteWebDriver.php:126
+E:\Dusk-with-travis-CI-demo\tests\DuskTestCase.php:41
+E:\Dusk-with-travis-CI-demo\vendor\laravel\dusk\src\Concerns\ProvidesBrowser.php:192
+E:\Dusk-with-travis-CI-demo\vendor\laravel\framework\src\Illuminate\Support\helpers.php:754
+E:\Dusk-with-travis-CI-demo\vendor\laravel\dusk\src\Concerns\ProvidesBrowser.php:193
+E:\Dusk-with-travis-CI-demo\vendor\laravel\dusk\src\Concerns\ProvidesBrowser.php:93
+E:\Dusk-with-travis-CI-demo\vendor\laravel\dusk\src\Concerns\ProvidesBrowser.php:64
+E:\Dusk-with-travis-CI-demo\tests\Browser\LoginTest.php:87
+</error>
+      </testcase>
     </testsuite>
-    <testsuite name="Tests\Browser\LogoutTest" file="C:\wamp64\www\laravel-dusk-demo\tests\Browser\LogoutTest.php" tests="1" assertions="3" errors="0" failures="0" skipped="0" time="6.211979">
-      <testcase name="testLogout" class="Tests\Browser\LogoutTest" classname="Tests.Browser.LogoutTest" file="C:\wamp64\www\laravel-dusk-demo\tests\Browser\LogoutTest.php" line="16" assertions="3" time="6.211979"/>
-    </testsuite>
-    <testsuite name="Tests\Browser\RegisterTest" file="C:\wamp64\www\laravel-dusk-demo\tests\Browser\RegisterTest.php" tests="2" assertions="7" errors="1" failures="0" skipped="0" time="17.235100">
-      <testcase name="testRegisterUserValidation" class="Tests\Browser\RegisterTest" classname="Tests.Browser.RegisterTest" file="C:\wamp64\www\laravel-dusk-demo\tests\Browser\RegisterTest.php" line="19" assertions="7" time="10.748458"/>
-      <testcase name="testRegister" class="Tests\Browser\RegisterTest" classname="Tests.Browser.RegisterTest" file="C:\wamp64\www\laravel-dusk-demo\tests\Browser\RegisterTest.php" line="76" assertions="0" time="6.486642">
-        <error type="Facebook\WebDriver\Exception\TimeOutException">Tests\Browser\RegisterTest::testRegister
+    <testsuite name="Tests\Browser\LogoutTest" file="E:\Dusk-with-travis-CI-demo\tests\Browser\LogoutTest.php" tests="1" assertions="0" errors="1" failures="0" skipped="0" time="10.309948">
+      <testcase name="testLogout" class="Tests\Browser\LogoutTest" classname="Tests.Browser.LogoutTest" file="E:\Dusk-with-travis-CI-demo\tests\Browser\LogoutTest.php" line="17" assertions="0" time="10.309948">
+        <error type="Facebook\WebDriver\Exception\TimeOutException">Tests\Browser\LogoutTest::testLogout
 Facebook\WebDriver\Exception\TimeOutException: Waited 5 seconds for location [/home].
 
-C:\wamp64\www\laravel-dusk-demo\vendor\laravel\dusk\src\Concerns\WaitsForElements.php:227
-C:\wamp64\www\laravel-dusk-demo\vendor\laravel\dusk\src\Concerns\WaitsForElements.php:156
-C:\wamp64\www\laravel-dusk-demo\vendor\laravel\dusk\src\Concerns\WaitsForElements.php:118
-C:\wamp64\www\laravel-dusk-demo\tests\Browser\RegisterTest.php:87
-C:\wamp64\www\laravel-dusk-demo\vendor\laravel\dusk\src\Concerns\ProvidesBrowser.php:67
-C:\wamp64\www\laravel-dusk-demo\tests\Browser\RegisterTest.php:91
+E:\Dusk-with-travis-CI-demo\vendor\laravel\dusk\src\Concerns\WaitsForElements.php:227
+E:\Dusk-with-travis-CI-demo\vendor\laravel\dusk\src\Concerns\WaitsForElements.php:156
+E:\Dusk-with-travis-CI-demo\vendor\laravel\dusk\src\Concerns\WaitsForElements.php:118
+E:\Dusk-with-travis-CI-demo\tests\Browser\Pages\LoginPage.php:86
+E:\Dusk-with-travis-CI-demo\tests\Browser\LogoutTest.php:21
+E:\Dusk-with-travis-CI-demo\vendor\laravel\dusk\src\Concerns\ProvidesBrowser.php:67
+E:\Dusk-with-travis-CI-demo\tests\Browser\LogoutTest.php:30
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="Tests\Browser\RegisterTest" file="E:\Dusk-with-travis-CI-demo\tests\Browser\RegisterTest.php" tests="2" assertions="0" errors="2" failures="0" skipped="0" time="20.525558">
+      <testcase name="testRegisterUserFormValidation" class="Tests\Browser\RegisterTest" classname="Tests.Browser.RegisterTest" file="E:\Dusk-with-travis-CI-demo\tests\Browser\RegisterTest.php" line="20" assertions="0" time="9.273403">
+        <error type="Facebook\WebDriver\Exception\WebDriverCurlException">Tests\Browser\RegisterTest::testRegisterUserFormValidation
+Facebook\WebDriver\Exception\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"binary":"","args":["--disable-gpu","--window-size=1920,1080"]}}}
+
+Failed to connect to localhost port 9515: Connection refused
+
+E:\Dusk-with-travis-CI-demo\vendor\facebook\webdriver\lib\Remote\HttpCommandExecutor.php:292
+E:\Dusk-with-travis-CI-demo\vendor\facebook\webdriver\lib\Remote\RemoteWebDriver.php:126
+E:\Dusk-with-travis-CI-demo\tests\DuskTestCase.php:41
+E:\Dusk-with-travis-CI-demo\vendor\laravel\dusk\src\Concerns\ProvidesBrowser.php:192
+E:\Dusk-with-travis-CI-demo\vendor\laravel\framework\src\Illuminate\Support\helpers.php:754
+E:\Dusk-with-travis-CI-demo\vendor\laravel\dusk\src\Concerns\ProvidesBrowser.php:193
+E:\Dusk-with-travis-CI-demo\vendor\laravel\dusk\src\Concerns\ProvidesBrowser.php:93
+E:\Dusk-with-travis-CI-demo\vendor\laravel\dusk\src\Concerns\ProvidesBrowser.php:64
+E:\Dusk-with-travis-CI-demo\tests\Browser\RegisterTest.php:32
+</error>
+      </testcase>
+      <testcase name="testRegister" class="Tests\Browser\RegisterTest" classname="Tests.Browser.RegisterTest" file="E:\Dusk-with-travis-CI-demo\tests\Browser\RegisterTest.php" line="75" assertions="0" time="11.252155">
+        <error type="Facebook\WebDriver\Exception\WebDriverCurlException">Tests\Browser\RegisterTest::testRegister
+Facebook\WebDriver\Exception\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"desiredCapabilities":{"browserName":"chrome","platform":"ANY","chromeOptions":{"binary":"","args":["--disable-gpu","--window-size=1920,1080"]}}}
+
+Failed to connect to localhost port 9515: Connection refused
+
+E:\Dusk-with-travis-CI-demo\vendor\facebook\webdriver\lib\Remote\HttpCommandExecutor.php:292
+E:\Dusk-with-travis-CI-demo\vendor\facebook\webdriver\lib\Remote\RemoteWebDriver.php:126
+E:\Dusk-with-travis-CI-demo\tests\DuskTestCase.php:41
+E:\Dusk-with-travis-CI-demo\vendor\laravel\dusk\src\Concerns\ProvidesBrowser.php:192
+E:\Dusk-with-travis-CI-demo\vendor\laravel\framework\src\Illuminate\Support\helpers.php:754
+E:\Dusk-with-travis-CI-demo\vendor\laravel\dusk\src\Concerns\ProvidesBrowser.php:193
+E:\Dusk-with-travis-CI-demo\vendor\laravel\dusk\src\Concerns\ProvidesBrowser.php:93
+E:\Dusk-with-travis-CI-demo\vendor\laravel\dusk\src\Concerns\ProvidesBrowser.php:64
+E:\Dusk-with-travis-CI-demo\tests\Browser\RegisterTest.php:88
 </error>
       </testcase>
     </testsuite>
