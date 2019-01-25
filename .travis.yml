@@ -2,7 +2,9 @@ php:
   - 7.1
 
 install:
-  - travis_retry composer install --no-interaction
+  - cp .env.example .env
+  - travis_retry composer install --no-interaction --prefer-dist --no-suggest
+  - php artisan key:generate
 
 before_script:
   - export DISPLAY=:99.0
